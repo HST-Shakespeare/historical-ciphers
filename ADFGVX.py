@@ -30,6 +30,5 @@ transpose(z, 0)
 transpose(o, 1)
 transpose(e, 2)
 
-
-e = []
-#uncertain new stuff:
+encryptedMessage = tuple(itertools.chain.from_iterable(z+o+e))
+print(encryptedMessage)
