@@ -14,3 +14,9 @@ cipherText = []
 for l in plaintext:
     cipherText.append(substitutionKey[l])
 print(cipherText)
+
+decryptionKey = dict(zip(alphabet2, alphabet))
+decryptedText = []
+for k in cipherText:
+    decryptedText.append(decryptionKey[k]
+print(decryptedText)
