@@ -4,16 +4,16 @@ substitutionKey = dict(zip(alphabet, cipherAlphabet))
 print(alphabet)
 print(cipherAlphabet)
 
-message = "rotcipher"  #generalize
-plaintext = tuple(message)
+def ROT13 (message):
+    plaintext = tuple(message)
 
-ciphertext = []
-for l in plaintext:
-    ciphertext.append(substitutionKey[l])
-print(ciphertext)
+    ciphertext = []
+    for l in plaintext:
+        ciphertext.append(substitutionKey[l])
+    print(ciphertext)
 
-decryptedText = []
-decryptionKey = dict(zip(cipherAlphabet, alphabet))
-for k in ciphertext:
-    decryptedText.append(decryptionKey[k])
-print(decryptedText)
+    decryptedText = []
+    decryptionKey = dict(zip(cipherAlphabet, alphabet))
+    for k in ciphertext:
+        decryptedText.append(decryptionKey[k])
+    print(decryptedText)
