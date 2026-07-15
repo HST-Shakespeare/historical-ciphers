@@ -1,4 +1,4 @@
-import intertools
+import itertools
 import random
 
 message = "hellothere"  #the message that is to be sent
@@ -23,7 +23,7 @@ substitutedText = list(itertools.chain.from_iterable(diagraphList))
 
 z = []
 o = []
-3 = []
+e = []
 def transpose(letter, start):
   letter.append(substitutedText[start::3])
 transpose(z, 0)
