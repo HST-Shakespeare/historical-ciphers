@@ -4,13 +4,17 @@ key = dict(zip(alphabet, rotatedAlphabet))
 print(alphabet)
 print(rotatedAlphabet)
 
-def ROT13 (message):
+def encrypt(message, key)
     try:
         ciphertext = []
         for l in message:
             ciphertext.append(key[l])
-        print(ciphertext)
-    
+            print(cipherText)
+    except:
+        print("error. Please use only lowercase letters")
+
+def decrypt(message, key)
+    try:
         decryptedText = []
         for k in ciphertext:
             decryptedText.append(key[k])
