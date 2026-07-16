@@ -6,11 +6,13 @@ print(alphabet)
 print(cipherAlphabet)
 
 def encrypt(message, key):
-
-ciphertext = []
-for l in message:
-    ciphertext.append(key[l])
-print(ciphertext)
+    try:
+        ciphertext = []
+        for l in message:
+            ciphertext.append(key[l])
+        print(ciphertext)
+    except:
+        print("error. Please use only lowercase letters")
 
 decryptedText = []
 for l in message:
