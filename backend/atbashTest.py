@@ -5,7 +5,7 @@ substitutionKey = dict(zip(alphabet, cipherAlphabet))
 print(alphabet)
 print(cipherAlphabet)
 
-message = "atbashcipher"
+message = "atbashcipher"  #generalize
 plaintext = tuple(message)
 
 ciphertext = []
