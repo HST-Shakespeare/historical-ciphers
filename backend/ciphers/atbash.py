@@ -13,8 +13,11 @@ def encrypt(message, key):
         print(ciphertext)
     except:
         print("error. Please use only lowercase letters")
-
-decryptedText = []
-for l in message:
-    decryptedText.append(key[l])
-print(decryptedText)
+def decrypt(message, key)
+    try:
+        decryptedText = []
+        for l in message:
+            decryptedText.append(key[l])
+        print(decryptedText)
+    except:
+        print("error. please use only lowercase letters")
