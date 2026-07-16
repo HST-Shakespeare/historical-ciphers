@@ -5,7 +5,7 @@ key = dict(zip(alphabet, cipherAlphabet))
 print(alphabet)
 print(cipherAlphabet)
 
-def encrypt(message, key)
+def encrypt(message, key):
 
 ciphertext = []
 for l in message:

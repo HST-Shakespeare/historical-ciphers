@@ -1,4 +1,15 @@
 from fastapi import FastAPI
+from pydantic import BaseModel
+from ciphers import caesar
+
+class EncryptRequest(BaseModel):
+    cipher: str
+    message: str
+    key: str | int
+
+cipher_modules = {
+    "caesar": caesar
+}
 
 app = FastAPI()
 
@@ -8,8 +19,13 @@ def root():
 
 @app.get("/ciphers")
 def get_ciphers():
-    return {"ciphers": ["Caesar", "Vigenère", "Rail Fence"]}
+    return {"ciphers": ["caesar"]}
 
-@app.get("/encrypt/{message}")
-def encrypt_message(message: str):
-    return message
+@app.post("/encrypt")
+def encrypt(data: EncryptRequest):
+    module = cipher_modules[data.cipher]
+    result = module.encrypt(data.message, data.key)
+
+    return {
+        "result": result
+    }
