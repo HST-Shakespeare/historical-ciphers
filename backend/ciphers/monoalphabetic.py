@@ -9,13 +9,14 @@ substitutionKey = dict(zip(alphabet, alphabet2))
 decryptionKey = dict(zip(alphabet2, alphabet))
 
 def encrypt(message):
+    plaintext = message.casefold()
     try:       
         cipherText = []
-        for l in message:
+        for l in plaintext:
             cipherText.append(substitutionKey[l])
         return(cipherText)
     except:
-        return("Error. Please use only lowercase letters")
+        return("Error. Please use only English letters")
 
 def decrypt(ciphertext):
     try:
@@ -24,4 +25,4 @@ def decrypt(ciphertext):
             decryptedText.append(decryptionKey[k])
         return(decryptedText)
     except:
-        return:("error. please use only lowercase letters")
+        return:("error. please use only English letters")
