@@ -14,7 +14,7 @@ def encrypt(message):
         cipherText = []
         for l in plaintext:
             cipherText.append(substitutionKey[l])
-        return(cipherText)
+        return(str(cipherText))
     except:
         return("Error. Please use only English letters")
 
@@ -23,6 +23,6 @@ def decrypt(ciphertext):
         decryptedText = []
         for k in cipherText:
             decryptedText.append(decryptionKey[k])
-        return(decryptedText)
+        return(str(decryptedText))
     except:
-        return:("error. please use only English letters")
+        return("error. please use only English letters")
