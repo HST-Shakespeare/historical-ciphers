@@ -1,12 +1,13 @@
 import itertools
-#creating the rails using itertools.repeat() function:
 a = list(itertools.repeat([], 3))
-#print(a)
 
 message = "guilford"
-plaintext = tuple(message)
+plaintext = message.casefold()
 
 def encrypt(input):
-    for v in range(0, input)
-        a[v].append(message[v::input])
-    print(a[input-1])
+    try:
+        for v in range(0, input)
+            a[v].append(message[v::input])
+        return(a[input-1])
+    except:
+        return("error. input must be an integer")
