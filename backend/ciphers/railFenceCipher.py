@@ -5,9 +5,6 @@ a = list(itertools.repeat([], 3))
 
 message = "guilford"
 plaintext = tuple(message)
-#using multiplication:
-lst = [[]]*3
-#print(lst)
 
 def encrypt(input):
     for v in range(0, input)
