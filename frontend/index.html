@@ -1,11 +1,37 @@
 <!doctype html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Historical Ciphers</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Cipher Explorer - Home</title>
+    <link rel="stylesheet" href="/css/variables.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/nav.css" />
+    <script src="/js/main.js" defer></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="manifest" href="/assets/site.webmanifest">
   </head>
-  <body></body>
+
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/explore">Explore</a>
+        <ul>
+          <li><a href="/explore/caesar">Caesar</a></li>
+          <li><a href="/explore/vigenere">ROT13</a></li>
+          <li><a href="/explore/atbash">Atbash</a></li>
+        </ul>
+      <a href="/challenges">Challenges</a>
+        <ul>
+          <li><a href="/challenges/caesar">Caesar</a></li>
+          <li><a href="/challenges/vigenere">ROT13</a></li>
+          <li><a href="/challenges/atbash">Atbash</a></li>
+        </ul>
+    </nav>
+    <main></main>
+  </body>
 </html>
+
