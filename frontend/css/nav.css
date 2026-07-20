@@ -27,6 +27,14 @@ nav h1 {
     margin-right: auto;
 }
 
+/* Title Parts */
+nav h1 #cipher {
+    color: var(--logo-key-fill);
+}
+nav h1 #explorer {
+    color: var(--logo-history-fill);
+}
+
 /* Logo */
 nav img {
     width: 3rem;
