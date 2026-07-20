@@ -17,19 +17,27 @@
 
   <body>
     <nav>
-      <a href="/">Home</a>
-      <a href="/explore">Explore</a>
-        <ul>
-          <li><a href="/explore/caesar">Caesar</a></li>
-          <li><a href="/explore/vigenere">ROT13</a></li>
-          <li><a href="/explore/atbash">Atbash</a></li>
-        </ul>
-      <a href="/challenges">Challenges</a>
-        <ul>
-          <li><a href="/challenges/caesar">Caesar</a></li>
-          <li><a href="/challenges/vigenere">ROT13</a></li>
-          <li><a href="/challenges/atbash">Atbash</a></li>
-        </ul>
+      <img src="/assets/logo.png" alt="Historical Cipher Explorer Logo" />
+      <h1>Historical Cipher Explorer</h1>
+      <div class="nav-links">
+        <a href="/" class="nav-link">Home</a>
+        <div class="nav-item">
+          <a href="/explore" class="nav-link">Explore</a>
+          <ul class="nav-dropdown">
+            <li><a href="/explore/caesar" class="nav-dropdown-link">Caesar</a></li>
+            <li><a href="/explore/rot13" class="nav-dropdown-link">ROT13</a></li>
+            <li><a href="/explore/atbash" class="nav-dropdown-link">Atbash</a></li>
+          </ul>
+        </div>
+        <div class="nav-item">
+          <a href="/challenges" class="nav-link">Challenges</a>
+          <ul class="nav-dropdown">
+            <li><a href="/challenges/caesar" class="nav-dropdown-link">Caesar</a></li>
+            <li><a href="/challenges/rot13" class="nav-dropdown-link">ROT13</a></li>
+            <li><a href="/challenges/atbash" class="nav-dropdown-link">Atbash</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <main></main>
   </body>

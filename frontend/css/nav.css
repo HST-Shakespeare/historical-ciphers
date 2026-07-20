@@ -1,0 +1,105 @@
+nav {
+    display: flex;
+    align-items: center;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 1rem;
+    gap: 1rem;
+    border-bottom: 1px solid var(--text-color);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Nav Links */
+nav .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Title */
+nav h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    color: var(--text-color);
+    text-decoration: none;
+    text-align: center;
+    margin-right: auto;
+}
+
+/* Logo */
+nav img {
+    width: 3rem;
+    height: 3rem;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    border: 2px solid var(--text-color);
+    transition: all 0.2s ease-in-out;
+
+}
+
+nav img:hover {
+    transform: scale(1.05) rotate(5deg);
+    cursor: pointer;
+}
+
+/* Nav Links */
+nav .nav-link {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: all 0.2s ease-in-out;
+    background-color: var(--background-color-secondary);
+    border-radius: 0.5rem;
+}
+nav .nav-link:hover {
+    transform: scale(1.05);
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
+
+
+
+/* Nav Item */
+.nav-item {
+    position: relative;
+    /* anchors the absolute dropdown */
+}
+
+/* Nav Dropdown */
+nav .nav-dropdown {
+    display: none;
+}
+
+/* Nav Dropdown Visibility */
+.nav-item:hover .nav-dropdown,
+.nav-item:focus-within .nav-dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem 0;
+    min-width: 10rem;
+    background: var(--background-color-secondary);
+    border: 1px solid var(--text-color);
+    z-index: 10;
+    border-radius: 0.5rem;
+}
+
+/* Nav Dropdown Link */
+.nav-dropdown-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* Nav Dropdown Link Hover */
+.nav-dropdown-link:hover {
+    background: var(--accent-color);
+}
