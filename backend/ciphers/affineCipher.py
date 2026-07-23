@@ -2,8 +2,11 @@ alphabet = {"a":0, "b":1, "c":2, "d":3, "e":4, "f":5, "g":6, "h":7, "i":8, "j":9
 d2 = {v: k for k, v in alphabet.items()} #alphabet swapped
 
 def encrypt(message, a, b):
-    plaintext = message.casefold()
-    for x in plaintext:
-        eq = a * alphabet[x] + b
-        result = eq % 26
-        return("".join(d2[result]), end="")
+    try:
+        plaintext = message.casefold()
+        for x in plaintext:
+            eq = a * alphabet[x] + b
+            result = eq % 26
+        return("".join(d2[result]))
+    except:
+        return("error. please use only English letters")
